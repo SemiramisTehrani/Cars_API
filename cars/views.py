@@ -1,3 +1,10 @@
-from django.shortcuts import render
+# removing everything here at first and add ours
 
-# Create your views here.
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+
+@api_view(['GET'])
+def cars_list(request) :
+
+
+    return Response('ok')
